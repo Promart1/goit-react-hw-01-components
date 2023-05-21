@@ -1,0 +1,80 @@
+.profile {
+    width: 340px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 70px 50px;
+  background-color: darkgrey;
+   
+}
+
+.description {
+    width: 200px;
+    height: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    background-color: white;
+   border-top-left-radius: 5%;
+   border-top-right-radius: 5%;
+}
+
+.avatar {
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+ 
+}
+
+.name {
+    text-align: center;
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.tag {
+    text-align: center;
+    font-weight: 300;
+    font-size: 15px;
+    margin-bottom: 15px;   
+}
+
+.location {
+    text-align: center;
+    font-weight: 500;
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+.stats {
+    width: 200px;
+    background-color: gainsboro;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    display: flex;
+    gap: 40px;
+    border-bottom-left-radius: 5%;
+   border-bottom-right-radius: 5%;
+   list-style-type: none;
+   
+}
+
+.label {
+    width: 40px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+
+.quantity {
+    width: 40px;
+display: flex;
+align-items: center;
+font-weight: 700;
+font-size: 18px;
+}
