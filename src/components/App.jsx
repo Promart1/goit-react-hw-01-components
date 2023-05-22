@@ -23,7 +23,7 @@ export const App = () => {
       {/* React homework template */}
       <ProfileList user={Profile} />
       <Statistics title="Upload stats" stats={data} />
-      <Statistics stats={data} />
+      
       <FriendList friends={friends}/>
       <TransactionHistory items={transactions}/>
 
