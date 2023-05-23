@@ -1,34 +1,36 @@
-
-import { Profile } from "./Profile/Profile";
-import { ProfileList } from "./Profile/ProfileList";
-import data from "./Statistics/data.json";
-import { Statistics } from "./Statistics/Statistics";
-import { FriendList } from "./Friend/FriendList";
-import friends from "./Friend/friends.json";
-import { TransactionHistory } from "./Transaction/TransactionHistory";
-import transactions from "./Transaction/transactions.json";
+import { Profile } from './Profile/Profile';
+import data from '../data/data.json';
+import { Statistics } from './Statistics/Statistics';
+import { FriendList } from './FriendList/FriendList';
+import friends from '../data/friends.json';
+import { TransactionHistory } from './TransactionHistory/TransactionHistory';
+import transactions from '../data/transactions.json';
+import user from '../data/user.json';
 
 export const App = () => {
   return (
     <div
-      // style={{
-      //   height: '100vh',
-      //   display: 'flex',
-      //   justifyContent: 'center',
-      //   alignItems: 'center',
-      //   fontSize: 40,
-      //   color: '#010101'
-      // }}
+    // style={{
+    //   height: '100vh',
+    //   display: 'flex',
+    //   justifyContent: 'center',
+    //   alignItems: 'center',
+    //   fontSize: 40,
+    //   color: '#010101'
+    // }}
     >
       {/* React homework template */}
-      <ProfileList user={Profile} />
+      <Profile
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+      />
       <Statistics title="Upload stats" stats={data} />
-      
-      <FriendList friends={friends}/>
-      <TransactionHistory items={transactions}/>
 
-
-
+      <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </div>
   );
 };
